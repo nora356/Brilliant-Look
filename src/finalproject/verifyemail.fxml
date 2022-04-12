@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="pa" prefHeight="486.0" prefWidth="357.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.VerifyemailController">
+   <children>
+      <Pane layoutX="-1.0" layoutY="-2.0" prefHeight="486.0" prefWidth="357.0" style="-fx-background-color: E3D7CE;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5d5c38" height="442.0" layoutX="27.0" layoutY="25.0" stroke="#5d5c38" strokeType="INSIDE" width="307.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3d7ce" height="403.0" layoutX="51.0" layoutY="43.0" stroke="#e3d7ce" strokeType="INSIDE" width="261.0" />
+            <Text fill="#5d5c38" layoutX="70.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verify Email" wrappingWidth="139.10546875">
+               <font>
+                  <Font name="Cambria Math" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#5d5c38" layoutX="70.0" layoutY="224.0" opacity="0.64" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter the 4 digit code sent to your email." wrappingWidth="184.8935546875">
+               <font>
+                  <Font name="Cambria Math" size="14.0" />
+               </font>
+            </Text>
+            <TextField disable="true" layoutX="70.0" layoutY="255.0" opacity="0.67" prefHeight="31.0" prefWidth="42.0" style="-fx-background-color: #5d5c38;" />
+            <TextField disable="true" layoutX="130.0" layoutY="255.0" opacity="0.67" prefHeight="31.0" prefWidth="42.0" style="-fx-background-color: #5d5c38;" />
+            <TextField disable="true" layoutX="188.0" layoutY="255.0" opacity="0.67" prefHeight="31.0" prefWidth="42.0" style="-fx-background-color: #5d5c38;" />
+            <TextField disable="true" layoutX="247.0" layoutY="255.0" opacity="0.67" prefHeight="31.0" prefWidth="42.0" style="-fx-background-color: #5d5c38;" />
+            <Button fx:id="sendAgainn" layoutX="135.0" layoutY="312.0" mnemonicParsing="false" onAction="#send" prefHeight="32.0" prefWidth="87.0" style="-fx-background-color: #5d5c38;" text="Send" textFill="#e3d7ce">
+               <font>
+                  <Font name="Cambria Math" size="19.0" />
+               </font>
+               <effect>
+                  <Reflection fraction="0.54" topOpacity="0.34" />
+               </effect>
+            </Button>
+            <Circle fill="#5d5c38" layoutX="151.0" layoutY="101.0" opacity="0.5" radius="43.0" stroke="#5d5c38" strokeType="INSIDE" />
+            <Circle fill="#5d5c38" layoutX="188.0" layoutY="126.0" opacity="0.5" radius="43.0" stroke="#5d5c38" strokeType="INSIDE" />
+            <ImageView fitHeight="86.0" fitWidth="86.0" layoutX="129.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@email.png" />
+               </image>
+            </ImageView>
+            <Pane fx:id="nev" layoutX="4.0" prefHeight="151.0" prefWidth="350.0">
+               <children>
+                  <Circle fx:id="cerBACK" fill="#225c8f00" layoutX="174.0" layoutY="81.0" onMouseClicked="#remov" onMousePressed="#remov" radius="25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Rectangle fx:id="code" arcHeight="50.0" arcWidth="50.0" fill="#88888a00" height="93.0" layoutX="-1.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="350.0" />
+                  <Label fx:id="n" layoutX="308.0" layoutY="6.0" prefHeight="17.0" prefWidth="28.0" textFill="#ddd6d6" />
+                  <Label fx:id="codeM" layoutX="56.0" layoutY="59.0" prefHeight="24.0" prefWidth="67.0" textAlignment="CENTER" textFill="#f2ebeb">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Circle fx:id="image" fill="#2470a600" layoutX="14.0" layoutY="18.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Label fx:id="email" layoutX="28.0" layoutY="9.0" prefHeight="19.0" prefWidth="28.0" textFill="#fff9f9">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="BLook" layoutX="7.0" layoutY="32.0" prefHeight="17.0" prefWidth="98.0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Reset" layoutX="7.0" layoutY="48.0" prefHeight="17.0" prefWidth="233.0" textFill="#f2e3e3" />
+                  <Label fx:id="co" layoutX="14.0" layoutY="62.0" textFill="#f2e3e3" />
+               </children>
+            </Pane>
+            <Button layoutX="137.0" layoutY="399.0" mnemonicParsing="false" onAction="#confirm" style="-fx-background-color: #5d5c38;" text="Confirm" textFill="#e3d7ce">
+               <font>
+                  <Font name="Cambria Math" size="18.0" />
+               </font>
+               <effect>
+                  <Reflection fraction="0.54" topOpacity="0.34" />
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

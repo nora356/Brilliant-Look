@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="486.0" prefWidth="357.0" style="-fx-background-color: #e3d7ce;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.F2Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5d5c38" height="362.0" layoutX="24.0" layoutY="28.0" stroke="#5d5c38" strokeType="INSIDE" width="313.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#5d5c38" height="342.0" layoutX="37.0" layoutY="40.0" stroke="#e3d7ce" strokeType="INSIDE" strokeWidth="2.0" width="290.0" />
+      <ImageView fitHeight="283.0" fitWidth="213.0" layoutX="5.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@face.png" />
+         </image>
+      </ImageView>
+      <Text fill="#e3d7ce" layoutX="64.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To know your skin type:" wrappingWidth="213.046875">
+         <font>
+            <Font name="Cambria Math" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#e3d7ce" layoutX="86.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please check how you feel " underline="true" wrappingWidth="163.72265625">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Text>
+      <Button layoutX="127.0" layoutY="438.0" mnemonicParsing="false" onAction="#skin" prefHeight="34.0" prefWidth="103.0" style="-fx-background-color: #5d5c38;" text="Next" textFill="#e3d7ce">
+         <font>
+            <Font name="Cambria Math" size="18.0" />
+         </font>
+         <effect>
+            <Reflection fraction="0.55" topOpacity="0.38" />
+         </effect>
+      </Button>
+      <fx:define>
+            <Image fx:id="NewTracker" url="@resources/NewTracker.bmp" />
+        </fx:define>
+          <ImageView fitHeight="26.0" fitWidth="52.0" layoutX="6.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@arrow.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="4.0" layoutY="8.0" mnemonicParsing="false" onAction="#Back" opacity="0.0" prefHeight="39.0" prefWidth="52.0" style="-fx-background-color: #5D5C38;" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Black" size="14.0" />
+         </font>
+      </Button>
+      <Circle fx:id="cheek2" fill="#e4e4e400" layoutX="144.0" layoutY="298.0" radius="24.0" stroke="#a1a1a100" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fx:id="cheek1" fill="#2197ff00" layoutX="222.0" layoutY="298.0" radius="24.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" />
+      <Ellipse fx:id="forehead" fill="#e35d1008" layoutX="181.0" layoutY="223.0" radiusX="48.0" radiusY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label fx:id="type" layoutX="116.0" layoutY="400.0" prefHeight="40.0" prefWidth="229.0" text=" " textFill="#5d5c38">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Ellipse fx:id="nose" fill="#2197ff00" layoutX="182.0" layoutY="273.0" radiusX="12.0" radiusY="33.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+     
+      <Ellipse fx:id="chin" fill="#1f93ff00" layoutX="182.0" layoutY="346.0" radiusX="24.0" radiusY="13.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <CheckBox fx:id="NOoily" layoutX="203.0" layoutY="306.0" mnemonicParsing="false" text="NO oily zone" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="NOdry" layoutX="203.0" layoutY="286.0" mnemonicParsing="false" text="NO dry zone" textFill="WHITE" />
+      <CheckBox fx:id="DryZone" layoutX="203.0" layoutY="186.0" mnemonicParsing="false" text="Dry zone all over" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></CheckBox>
+      <Button fx:id="finish" layoutX="38.0" layoutY="403.0" mnemonicParsing="false" onAction="#typeSkin" prefHeight="34.0" prefWidth="73.0" style="-fx-background-color: #5d5c38;" text="Finish" textFill="#e3d7ce">
+         <font>
+            <Font name="Cambria Math" size="18.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="fine" layoutX="203.0" layoutY="266.0" mnemonicParsing="false" text="Fine lines &amp; wrinkles" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="203.0" layoutY="206.0" mnemonicParsing="false" onAction="#typeSkin" text="Flaky, skin surface" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="ProneSensitivity" layoutX="203.0" layoutY="226.0" mnemonicParsing="false" text="Prone to sensitivity" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="NONsensitivity" layoutX="203.0" layoutY="246.0" mnemonicParsing="false" text="Non-sensitivity" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></CheckBox>
+   </children>
+</AnchorPane>

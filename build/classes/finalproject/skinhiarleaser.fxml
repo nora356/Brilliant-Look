@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="486.0" prefWidth="357.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.SkinhiarleaserController">
+   <children>
+      <Pane prefHeight="486.0" prefWidth="359.0" style="-fx-background-color: #e3d7ce;">
+         <children>
+            <Text fill="#5d5c38" layoutX="24.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B R I L L I A N T   L O O K">
+               <font>
+                  <Font name="Georgia Pro Cond Black" size="24.0" />
+               </font>
+               <effect>
+                  <Lighting specularConstant="0.57" specularExponent="13.17" surfaceScale="2.72">
+                     <bumpInput>
+                        <Shadow color="#d7d5b0" height="47.44" radius="19.72" width="33.44" />
+                     </bumpInput>
+                     <light>
+                        
+                     </light>
+                  </Lighting>
+               </effect>
+            </Text>
+            <Line endX="53.0" layoutX="305.0" layoutY="79.0" startX="-100.0">
+               <effect>
+                  <Reflection />
+               </effect>
+            </Line>
+            <Line endX="53.0" layoutX="305.0" layoutY="71.0" startX="-100.0">
+               <effect>
+                  <Reflection />
+               </effect>
+            </Line>
+            <ImageView fitHeight="82.0" fitWidth="78.0" layoutX="212.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@60cc7ced5a9fdbbb1dc3ccdb7293c736-removebg-preview%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="79.0" fitWidth="78.0" layoutX="207.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@60cc7ced5a9fdbbb1dc3ccdb7293c736-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="95.0" fitWidth="93.0" layoutX="146.0" layoutY="89.0" pickOnBounds="true">
+               <image>
+                  <Image url="@60cc7ced5a9fdbbb1dc3ccdb7293c736-removebg-preview%20(2).png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" disable="true" fill="#5d5c38" height="95.0" layoutX="24.0" layoutY="110.0" opacity="0.67" stroke="#5d5c38" strokeType="INSIDE" width="112.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" disable="true" fill="#5d5c38" height="95.0" layoutX="207.0" layoutY="230.0" opacity="0.67" stroke="#5d5c38" strokeType="INSIDE" width="112.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" disable="true" fill="#5d5c38" height="95.0" layoutX="34.0" layoutY="365.0" opacity="0.67" stroke="#5d5c38" strokeType="INSIDE" width="112.0" />
+            <Text fill="#e3d7ce" layoutX="34.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S" wrappingWidth="23.75">
+               <font>
+                  <Font name="Cambria Math" size="64.0" />
+               </font>
+            </Text>
+            <Text fill="#e3d7ce" layoutX="60.0" layoutY="172.0" stroke="#f8f8e1" strokeType="OUTSIDE" strokeWidth="0.0" text="kin care" underline="true">
+               <font>
+                  <Font name="Cambria Math" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#e3d7ce" layoutX="213.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="H" wrappingWidth="23.75">
+               <font>
+                  <Font name="Cambria Math" size="64.0" />
+               </font>
+            </Text>
+            <Text fill="#e3d7ce" layoutX="251.0" layoutY="291.0" stroke="#f8f8e1" strokeType="OUTSIDE" strokeWidth="0.0" text="air care" underline="true">
+               <font>
+                  <Font name="Cambria Math" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#e3d7ce" layoutX="46.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="L" wrappingWidth="23.75">
+               <font>
+                  <Font name="Cambria Math" size="64.0" />
+               </font>
+            </Text>
+            <Text fill="#e3d7ce" layoutX="70.0" layoutY="417.0" stroke="#f8f8e1" strokeType="OUTSIDE" strokeWidth="0.0" text="easer" underline="true">
+               <font>
+                  <Font name="Cambria Math" size="18.0" />
+               </font>
+            </Text>
+            <Rectangle fx:id="rFace" arcHeight="5.0" arcWidth="5.0" fill="#5c5b3800" height="82.0" layoutX="30.0" layoutY="116.0" onMouseClicked="#TOface" opacity="0.95" stroke="#e3d7ce" strokeType="INSIDE" width="101.0" />
+            <Rectangle fx:id="rHair" arcHeight="5.0" arcWidth="5.0" fill="#5c5b3800" height="82.0" layoutX="213.0" layoutY="237.0" onMouseClicked="#TOhair" opacity="0.95" stroke="#e3d7ce" strokeType="INSIDE" width="101.0" />
+            <Rectangle fx:id="rLeaser" arcHeight="5.0" arcWidth="5.0" fill="#5c5b3800" height="82.0" layoutX="40.0" layoutY="372.0" onMouseClicked="#TOleaser" opacity="0.95" stroke="#e3d7ce" strokeType="INSIDE" width="101.0" />
+            <Line endX="-105.0" endY="-157.0" layoutX="114.0" layoutY="239.0" startX="-105.0" startY="239.0" />
+            <Line endX="221.0" endY="229.5" layoutX="124.0" layoutY="249.0" startX="-114.5" startY="229.5" />
+            <ImageView fitHeight="126.0" fitWidth="154.0" layoutX="58.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@90390b51bdf77bda8bde50fddf76f7d3-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="64.0" fitWidth="61.0" layoutX="214.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@804fb3adcb758464c58ac3f8fbd98ffd-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="112.0" fitWidth="112.0" layoutX="156.0" layoutY="365.0" pickOnBounds="true">
+               <image>
+                  <Image url="@c96b630d8e7b87ff81b13674221a3766-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="52.0" layoutX="6.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@arrow.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="4.0" layoutY="-3.0" mnemonicParsing="false" onAction="#Back" opacity="0.0" prefHeight="39.0" prefWidth="52.0" style="-fx-background-color: #5D5C38;" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Black" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
